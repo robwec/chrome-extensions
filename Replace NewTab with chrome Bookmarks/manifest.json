@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Replace new tab with chrome://bookmarks",
+  "description": "does what it says",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+  ],
+  "chrome_url_overrides" : {
+    "newtab": "redirect_to_mypage.html"
+  }
+}

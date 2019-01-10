@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Superior Close Tab: Close moves to left tab, and won't close Pinned Tabs",
+  "description": "1. After closing tab, new active tab is the left tab.
+  
+  2. Prevent pinned tabs from being closed with ctrl+w.
+  
+  You have to remap ctrl+w (or the shortcut of your choice) to the command before you can use this extension. Go to the bottom of the chrome://extensions page and click \"Keyboard shortcuts\", then remap the shortcut named \"close tabs left, protect pinned tabs\".",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+  ],
+  "commands": {
+    "close tab": {
+      "suggested_key": {
+        "default": "Ctrl+W"
+      },
+      "description": "close tabs left, protect pinned tabs"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Rearrange Tabs Keyboard Shortcuts",
+  "description": "Adds a command to rearrange tabs. Map the shortcut at the bottom of the extensions page chrome://extensions",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "shift tab left": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+PageUp"
+      },
+      "description": "Shift tab one position to the left."
+    },
+    "shift tab right": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+PageDown"
+      },
+      "description": "Shift tab one position to the right."
+    }
+  }
+}

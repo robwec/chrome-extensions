@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  
+  "name": "wikipedia fast category browsing hotkeys",
+  "description": "Adds keyboard shortcuts to browse wikipedia pages in the last visited category page. Just press A (left) or D (right) after visiting a category page. Then read read read read read...",
+  "version": "1.0",
+  
+  "browser_action": {
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.wikipedia.org/*"
+      ],
+      "exclude_matches": [
+        "https://*.wikipedia.org/*&action=edit",
+        "https://*.wikipedia.org/*&action=history"
+      ],
+      "js": ["jquery-3.2.1.min.js", "content.js"]
+    }
+  ]
+}
